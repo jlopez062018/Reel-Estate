@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>🎣 Reel Estate</title>
+  <link rel="stylesheet" href="css/style.css" />
+</head>
+<body>
+
+  <header>
+    <h1>🎣 Reel Estate</h1>
+    <div id="hud">
+      <span>Gold: <span id="gold">0</span> 🪙</span>
+      <span>Fish: <span id="fish-count">0</span> 🐟</span>
+      <span>Price per Fish: $<span id="fish-price">0.25</span></span>
+    </div>
+  </header>
+
+  <main>
+    <section id="left-panel">
+      <div id="fishing-area">
+        <img src="assets/images/fishing-icon.png" alt="Fishing Icon" id="fish-button" />
+        <p>Click to Cast Your Line!</p>
+      </div>
+    </section>
+
+    <section id="right-panel">
+      <h2>Upgrade Store</h2>
+      <div class="store-item">
+        <p><strong>Wooden Rod</strong><br>+1 Fish per Click<br>Cost: 50 Gold</p>
+        <button>Buy</button>
+      </div>
+      <!-- Additional store items will be added here -->
+    </section>
+  </main>
+
+  <script src="js/script.js" defer></script>
+</body>
+</html>
