@@ -1,0 +1,70 @@
+/* ===== LOG AND FLOATING TEXT ===== */
+#log {
+    margin-top: 1rem;
+    height: 100px;
+    overflow-y: auto;
+    width: 100%;
+    max-width: 400px;
+    text-align: left;
+    background-color: #fff;
+    padding: 0.5rem;
+    border-radius: 6px;
+    box-shadow: 0 0 5px rgba(0,0,0,0.1);
+  }
+  
+  .float-text {
+    position: absolute;
+    animation: floatUp 1s ease-out forwards;
+    pointer-events: none;
+    color: #0077c2;
+    font-weight: bold;
+  }
+  
+  @keyframes floatUp {
+    0% {
+      opacity: 1;
+      transform: translateY(0);
+    }
+    100% {
+      opacity: 0;
+      transform: translateY(-40px);
+    }
+  }
+  
+  @media (max-width: 768px) {
+    main {
+      flex-direction: column;
+    }
+  
+    #right-panel {
+      width: 100%;
+      border-left: none;
+      border-top: 2px solid #ccc;
+    }
+  
+    #left-panel {
+      height: 60vh;
+    }
+  }
+
+  #sell-button {
+    margin-top: 1rem;
+    padding: 0.5rem 1rem;
+    font-size: 1rem;
+    background-color: #4caf50;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+  }
+  
+  #sell-button:hover {
+    background-color: #388e3c;
+  }
+  
+  #fishing-area {
+    min-height: 300px;
+    max-width: 400px;
+    width: 100%;
+  }
+  
